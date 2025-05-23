@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import LinkedinIcon from '@/assets/icons/linkedin.svg';
-import GithubIcon from '@/assets/icons/github.svg';
 import TwitterIcon from '@/assets/icons/twitter.svg';
 import MailIcon from '@/assets/icons/mail.svg';
 import Link from 'next/link';

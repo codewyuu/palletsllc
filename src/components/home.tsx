@@ -2,8 +2,9 @@
 
 import { useSection } from '@/lib/hooks';
 import { Sections } from '@/lib/types';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { BubbleText } from './ui/bubble-text';
+import Image from 'next/image';
 
 const glitchConfig = {
  playMode: 'always',
