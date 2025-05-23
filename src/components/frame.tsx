@@ -23,7 +23,7 @@ export default function Frame() {
     transition={{ duration: ANIMATION_DURATION.MEDIUM, ease: 'easeInOut' }}
     className={`fixed top-5 sm:top-10 left-5 sm:left-10 z-20  `}
    >
-    <BubbleText className="text-2xl sm:text-4xl" text="Abhiman Panwar" />
+    <BubbleText className="text-2xl sm:text-4xl" text="Pallets LLC" />
    </motion.h1>
 
    <motion.p
@@ -35,7 +35,7 @@ export default function Frame() {
     transition={{ duration: ANIMATION_DURATION.MEDIUM, ease: 'easeInOut' }}
     className="2xl:mt-5 fixed bottom-5 sm:bottom-10 left-5 sm:left-10 text-theme-secondary text-lg font-semibold  "
    >
-    Frontend Developer
+    tech solutions//media
    </motion.p>
 
    <motion.div

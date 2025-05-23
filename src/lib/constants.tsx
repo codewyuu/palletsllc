@@ -1,8 +1,8 @@
 import { Section, SectionColors, Sections } from './types';
 import Home from '@/components/home';
 import Works from '@/components/works';
-import Aitriplanner from '@/assets/images/aitriplanner-cover.webp';
-import thewaitercompany from '@/assets/images/thewaitercompany-cover.webp';
+import vakeel from '@/assets/images/vakeel-cover.webp';
+import vgroww from '@/assets/images/vgroww-cover.webp';
 import threepointonefour from '@/assets/images/threepointonefour-cover.webp';
 import Experiences from '@/components/experiences';
 import Contact from '@/components/contact';
@@ -15,10 +15,10 @@ export const ANIMATION_DURATION = {
 
 export const SECTIONS: Section[] = [
  { content: <Home />, title: 'Home' },
- { content: <Works />, title: 'Works' },
+ { content: <Works />, title: 'Projects' },
  {
   content: <Experiences />,
-  title: 'Experiences',
+  title: 'Achievements',
  },
  {
   content: <Contact />,
@@ -74,22 +74,21 @@ export const SECTION_THEME_MAP: {
 
 export const WORKS_ITEMS = [
  {
-  cover: Aitriplanner,
-  title: 'AI Trip Planner',
+  cover: vakeel,
+  title: 'Vakeel AI',
   subject: 'Design and Implementation',
   description:
-   "AI Trip Planner uses AI-powered algorithms to create personalized travel recommendations and dynamic itineraries.",
-  link: 'https://aitriplanner.vercel.app',
+   "AI-powered legal research assistant that simplifies Indian legal research with instant case summaries and citation-ready notes.",
+  link: 'https://vakeel-ai.vercel.app/',
   techStack: ['Next.js', 'TypeScript', 'Open AI'],
  },
  {
-  cover: thewaitercompany,
-  title: 'TheWaiterCompany',
+  cover: vgroww,
+  title: 'vgroww',
   subject: 'Prototyping and Implementation',
   description:
-   "TheWaiterCompany is a QR code-based platform that simplifies restaurant operations through digital ordering and inventory management.",
-  link:
-   'https://www.thewaitercompany.in/',
+   "vgroww is a powerful tool for modeling a startup's growth trajectory based on inputs like marketing spend, user acquisition rates, and churn.",
+  link: 'https://vgrowwww.vercel.app/login',
   techStack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
  },
  {

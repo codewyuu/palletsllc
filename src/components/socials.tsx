@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import LinkedinIcon from '@/assets/icons/linkedin.svg';
 import GithubIcon from '@/assets/icons/github.svg';
 import TwitterIcon from '@/assets/icons/twitter.svg';
+import MailIcon from '@/assets/icons/mail.svg';
 import Link from 'next/link';
 import { ANIMATION_DURATION } from '@/lib/constants';
 import { cn } from '@/lib/utils';
@@ -31,19 +32,22 @@ export default function Socials({ className }: { className?: string }) {
             className={cn('flex items-center gap-5 z-10 justify-center', className)}
         >
             <Link
-                className="text-theme-primary font-black hover:scale-125 duration-300 transition-transform delay-0"
-                href="https://medium.com/@kroszborg"
-                target='_blank'
-                aria-label={`Abhiman Panwar's Blogs (opens in the new tab)`}
+                href="mailto:pallets.community@gmail.com"
+                target="_blank"
+                aria-label="Email Pallets LLC"
             >
                 <motion.div custom={0} variants={iconVariants}>
-                     <span> Blog </span>
+                    <MailIcon
+                        className="fill-theme-primary hover:scale-125 transition-transform duration-200 delay-0"
+                        style={{ fill: 'var(--theme-primary)', width: '30px', height: '30px', marginTop: '-3px' }}
+                        aria-hidden="true"
+                    />
                 </motion.div>
             </Link>
             <Link
-                href="https://www.linkedin.com/in/abhiman-panwar-272aa7228/"
+                href="https://www.linkedin.com/in/palletsx4/"
                 target="_blank"
-                aria-label="Abhiman Panwar's LinkedIn profile (opens in a new tab)"
+                aria-label="Pallets LLC's LinkedIn profile (opens in a new tab)"
             >
                 <motion.div custom={1} variants={iconVariants}>
                     <LinkedinIcon
@@ -52,32 +56,12 @@ export default function Socials({ className }: { className?: string }) {
                     />
                 </motion.div>
             </Link>
+
+
             <Link
-                href="https://github.com/Kroszborg"
+                href="https://x.com/palletsx4"
                 target="_blank"
-                aria-label="Abhiman Panwar's GitHub profile (opens in a new tab)"
-            >
-                <motion.div custom={2} variants={iconVariants}>
-                    <GithubIcon
-                        className="fill-theme-primary hover:scale-125 transition-transform duration-200 delay-0"
-                        aria-hidden="true"
-                    />
-                </motion.div>
-            </Link>
-            <Link
-                className="text-theme-primary font-black hover:scale-125 duration-300 transition-transform delay-0"
-                href="https://docs.google.com/document/d/1vyy2-e_Fj9JhI5bLKmpdliicZTI85H2bTcdtDtoHxco/edit?usp=sharing"
-                target="_blank"
-                aria-label="Abhiman Panwar's Resume (opens in a new tab)"
-            >
-                <motion.div custom={3} variants={iconVariants}>
-                    <span> Resume </span>
-                </motion.div>
-            </Link>
-            <Link
-                href="https://x.com/abhimanpanwar"
-                target="_blank"
-                aria-label="Abhiman Panwar's Twitter profile (opens in a new tab)"
+                aria-label="Pallets LLC's Twitter profile (opens in a new tab)"
             >
                 <motion.div custom={2} variants={iconVariants}>
                     <TwitterIcon

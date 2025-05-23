@@ -17,7 +17,7 @@ export default function Contact() {
      transition={{ duration: 0.8, delay: 0.3 }}
      className="text-3xl font-bold text-theme-primary mb-4"
     >
-     Get in Touch
+     Get in Touch with us
     </motion.h2>
     <motion.p
      initial={{ opacity: 0, x: -20 }}
@@ -25,17 +25,16 @@ export default function Contact() {
      transition={{ duration: 0.8, delay: 0.5 }}
      className="text-lg text-white mb-4"
     >
-     {`I'm always open to discussing new projects, creative ideas, or
-        opportunities to be part of your vision. Feel free to reach out!`}
+     {`we are always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!`}
     </motion.p>
     <motion.a
      initial={{ opacity: 0, x: -20 }}
      animate={{ opacity: 1, x: 0 }}
      transition={{ duration: 0.8, delay: 0.7 }}
-     href="mailto:abhimanpanwar6@gmail.com"
+     href="mailto:pallets.community@gmail.com"
      className="text-xl font-semibold text-theme-primary underline mb-6 hoverable "
     >
-     abhimanpanwar6@gmail.com
+     pallets.community@gmail.com
     </motion.a>
     <motion.div
      initial={{ opacity: 0, y: 20 }}
@@ -45,10 +44,10 @@ export default function Contact() {
     >
      <span className="text-4xl text-theme-primary">❝</span>
      <p className="text-lg italic text-white mb-2">
-      {`"With great power comes a huge electricity bill."`}
+      {`"providing tech solutions one at a time with creative response"`}
      </p>
      <p className="text-sm text-theme-primary font-semibold self-end">
-      — Doctor Who
+      — Pallets LLC
      </p>
     </motion.div>
    </div>

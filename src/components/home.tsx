@@ -1,10 +1,8 @@
 'use client';
 
-import IntroFigure from '@/assets/images/intro-figure.webp';
 import { useSection } from '@/lib/hooks';
 import { Sections } from '@/lib/types';
-import Image from 'next/image';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { BubbleText } from './ui/bubble-text';
 
 const glitchConfig = {
@@ -37,6 +35,7 @@ export default function Home() {
  const { setSectionIndex } = useSection();
 
  useEffect(() => {
+  // Apply glitch effect to video
   const loadGlitch = async () => {
    const { PowerGlitch } = await import('powerglitch');
    PowerGlitch.glitch('#cover', glitchConfig);
@@ -50,17 +49,21 @@ export default function Home() {
    <div className="relative flex items-center justify-center sm:mt-20">
     <BubbleText
      className="text-[calc(100vw/6)] font-light text-theme-primary -z-10 absolute"
-     text="Abhiman"
+     text="Pallets"
     />
 
-    <Image
+    <div
      id="cover"
-     className="w-52 md:w-72 lg:w-80"
-     src={IntroFigure}
-     alt="figure"
-     priority
-     loading="eager"
-    />
+     className="w-52 md:w-72 lg:w-80 relative"
+    >
+     <img
+      src="/images/intro-figure.webp"
+      alt="figure"
+      className="w-full h-auto"
+      width={320}
+      height={320}
+     />
+    </div>
    </div>
 
    <p className="text-2xl mt-10 sm:text-4xl text-white sm:mt-2 text-center">
@@ -76,7 +79,7 @@ export default function Home() {
     }}
     className="text-theme-background text-lg rounded-2xl bg-white text-theme-4 hover:bg-theme-accent font-semibold hover:text-white px-24 py-3 mt-5 delay-0 hover:px-28 hoverable active:brightness-80 hover:tracking-widest transition-all duration-500 hover:shadow-2xl shadow-white"
    >
-    Contact me
+    Contact us
    </button>
   </div>
  );

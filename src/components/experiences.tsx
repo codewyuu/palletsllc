@@ -1,13 +1,31 @@
 'use client';
 import { motion } from 'framer-motion';
-import { experiences } from '@/lib/constants';
 
 export default function Experiences() {
+  // Define achievements data
+  const achievements = [
+    {
+      title: '1st Place at "XLR8"',
+      description: 'Inter-college hackathon organized by Sri Venkateswara College, Delhi University',
+      date: '2025'
+    },
+    {
+      title: 'Third Runner-Up',
+      description: 'Datamatics Hackathon during IIT Bombay Techfest',
+      date: '2024'
+    },
+    {
+      title: 'Top 15 Finalist',
+      description: 'Hackstasy 2025 hosted by SRM University',
+      date: '2025'
+    }
+  ];
+
   return (
     <div className="flex flex-col-reverse gap-5 lg:flex-row items-center lg:gap-24 relative lg:right-40 mr-5">
       <div className="relative flex flex-col items-center">
         <span className="text-lg lg:text-2xl text-white mb-2">
-          Over <b>2</b> Years
+          since 2024
         </span>
         {/* Animated SVG underline */}
         <motion.svg
@@ -31,7 +49,7 @@ export default function Experiences() {
       
       <div className="relative flex flex-col items-start pl-5 w-full">
         <div className="relative pl-8 w-full">
-          {experiences.map((experience, index) => (
+          {achievements.map((achievement, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -56,23 +74,25 @@ export default function Experiences() {
               {/* Current Indicator */}
               {index === 0 && (
                 <div className="font-semibold text-xl text-theme-primary mb-2">
-                  Current
+                  Latest
                 </div>
               )}
               
-              {/* Experience Details */}
+              {/* Achievement Details */}
               <div className="flex items-center justify-between w-full gap-5">
                 <h3 className="text-2xl lg:text-4xl font-bold text-white">
-                  {experience.title}
+                  {achievement.title}
                 </h3>
-                <p className="text-sm lg:text-lg font-medium text-theme-primary text-right">
-                  {experience.role}
-                </p>
               </div>
+              
+              {/* Description */}
+              <p className="text-sm lg:text-lg font-medium text-theme-secondary mt-1 mb-2">
+                {achievement.description}
+              </p>
               
               {/* Date */}
               <div className="font-semibold text-base lg:text-xl text-theme-primary mt-2">
-                {experience.date}
+                {achievement.date}
               </div>
             </motion.div>
           ))}
