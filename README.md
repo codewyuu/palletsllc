@@ -114,7 +114,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👤 Author
 
-- **Abhiman Panwar** - [GitHub](https://github.com/codewyuu)
+- **Yuvraj Sharma** - [GitHub](https://github.com/codewyuu)
 
 ## 🙏 Acknowledgements
 
