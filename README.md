@@ -8,7 +8,8 @@
 
 A modern, responsive portfolio website built with Next.js, React, and TailwindCSS. This project showcases a professional portfolio with smooth animations, interactive UI elements, and optimized performance.
 
-![Website Preview](public/thumbnail.png)
+![thumbnail](https://github.com/user-attachments/assets/27b6a395-8b09-4af6-96b2-7d65ca399ef6)
+
 
 ## 🚀 Features
 
