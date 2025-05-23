@@ -57,12 +57,13 @@ export default function Home() {
      id="cover"
      className="w-52 md:w-72 lg:w-80 relative"
     >
-     <img
+     <Image
       src="/images/intro-figure.webp"
       alt="figure"
       className="w-full h-auto"
       width={320}
       height={320}
+      priority
      />
     </div>
    </div>
