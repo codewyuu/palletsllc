@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-A modern, responsive portfolio website built with Next.js, React, and TailwindCSS. This project showcases a professional portfolio with smooth animations, interactive UI elements, and optimized performance.
+A modern, responsive website built with Next.js, React, and TailwindCSS. This project showcases a professional portfolio with smooth animations, interactive UI elements, and optimized performance.
 
 ![thumbnail](https://github.com/user-attachments/assets/27b6a395-8b09-4af6-96b2-7d65ca399ef6)
 
