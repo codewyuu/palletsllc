@@ -117,9 +117,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - **Yuvraj Sharma** - [GitHub](https://github.com/codewyuu)
 
+
+
 ## 🙏 Acknowledgements
 
 - [Next.js Team](https://nextjs.org/)
 - [TailwindCSS Team](https://tailwindcss.com/)
 - [Vercel](https://vercel.com/) for hosting and analytics tools
 - [Cloudflare](https://www.cloudflare.com/) for Pages deployment
+
+SPECIAL THANKS TO **ABHIMAN PARWAR** - [GitHub](https://github.com/Kroszborg)
